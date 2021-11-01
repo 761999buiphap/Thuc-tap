@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/loaisach1.css">
+	<title>Document</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: #f2f2f2;">
+	<!--header-->
+	<div class="header">
+		<img class="header_logo" src="img/header/logo.JPG" alt="">
+		<form class="header_form" action="">
+			<input type="text" name="" value="" placeholder="Tìm kiếm...">
+			<input type="submit" value="Tìm kiếm">
+		</form>
+		<div class="header_giohang">
+			<img style="width:50%;margin-left:10px;" src="https://img.icons8.com/color/55/000000/shopping-cart--v2.png"/>
+			<br><span>Giỏ hàng</span>
+		</div>
+		<div class="header_dangnhap">
+			<img style="margin-left:15px;" src="https://img.icons8.com/plumpy/30/000000/change-user-male.png"/>
+			<br><a href="">Đăng nhập</a>
+		</div>
+		<div class="header_dangki">
+			<img style="margin-left:12px;" src="https://img.icons8.com/plumpy/30/000000/edit-user-male.png"/>
+			<br><a href="">Đăng kí</a>
+		</div>
+	</div>
+	
+	<div class="thanhquanli">
+			<div class="div1_dulieu">
+				<button class="dulieu" ><img src="https://img.icons8.com/wired/30/ffffff/sorting-answers.png"/><span style="font-size:15px;font-weight:bold"> SÁCH</span></button>
+				<div class="div1_dulieu1">
+					<a style="color:black;" href='HSNV_admin.php?tentk=".$tentk."'><img style="margin-right: 10px;" src="https://img.icons8.com/windows/20/26e07f/bookmark-book--v1.png"/>LOẠI SÁCH</a>
+					<a style="color:black;" href='HSNV_admin.php?tentk=".$tentk."'><img style="margin-right: 10px;" src="https://img.icons8.com/carbon-copy/20/26e07f/address-book--v1.png"/>SÁCH</a>
+				</div>
+			</div>
+			<img style="margin: 0 10px 0 7% ;" src="https://img.icons8.com/wired/30/ffffff/car.png"/><a href="">SLIDE</a>
+			<img style="margin: 0 10px 0 7% ;" src="https://img.icons8.com/wired/30/ffffff/car.png"/><a href="">ĐƠN HÀNG</a>
+			<img style="margin: 0 10px 0 7% ;" src="https://img.icons8.com/wired/30/ffffff/car.png"><a href="">TÀI KHOẢN</a>
+			<img style="margin: 0 10px 0 7% ;" src="https://img.icons8.com/wired/30/ffffff/car.png"/><a href="">CÀI ĐẶT</a>
+
+
+	</div>
+
+	<!--body-->
+	<div id="nen">
+
+	</div>
+	<div id="divthem">
+		<button id="close">[ X close ]</button>
+		<hr>
+		<form action=""><br><br>
+			<label for="" class="lable">Tên loại sách:</label><br><br>
+			<input type="text"><br><br>
+			<input type="submit" name="" id="" value="Thêm">
+		</form>
+	</div>
+	<button id="themloaisach">+ Thêm loại sách</button>
+	<script>
+		document.getElementById("themloaisach").addEventListener("click",tls);
+		document.getElementById("close").addEventListener("click",dong);
+		function tls(){
+			document.getElementById("divthem").style.display = "block";
+			document.getElementById("nen").style.display = "block";
+			
+		}
+		function dong(){
+			document.getElementById("divthem").style.display = "none";
+			document.getElementById("nen").style.display = "none";
+		}
+	</script>
+	<div class="body">
+		<table>
+			<tr><th>STT</th><th>Tên loại sách</th><th>Xóa</th><th>Sửa</th></tr>
+			<tr><td>1</td><td>Sách trẻ em</td><td><a href="">Delete</a></td><td><a href="">Edit</a></td></tr>
+		</table>
+	</div>
+
+	<!--footer-->
+	<div class="footer-1">
+		<div style="margin-left: 9%;">
+			<img style="width: 250px;" src="img/footer/ads.JPG" alt=""><br>
+			<img src="https://img.icons8.com/pastel-glyph/20/ffffff/place-marker--v1.png"/>LK 02 - 03, Dãy B, KĐT Green Pearl, 378 Minh Khai, Hai Bà Trưng, Hà Nội.<br>
+			<img src="https://img.icons8.com/metro/20/ffffff/phone.png"/>0968832922
+		</div>
+		<div>
+			<h3>KẾT NỐI VỚI MINH LONG | HÌNH THỨC THANH TOÁN</h3>
+			<a><img src="https://img.icons8.com/metro/50/ffffff/facebook-new--v2.png"/></a>
+			<a><img src="https://img.icons8.com/small/50/ffffff/youtube.png"/></a>
+			<a><img src="https://img.icons8.com/fluent-systems-regular/50/ffffff/instagram-new--v1.png"/></a>
+			<a><img src="https://img.icons8.com/ios-filled/50/ffffff/google-plus.png"/></a>
+
+		</div>
+	</div>
+	<div class="footer-2">
+		<p style="margin:0px;">© Bản quyền thuộc về Công ty TNHH MTV TM và DV Văn Hoá Minh Long</p>
+	</div>
+</body>
+<!--<script>
+	document.getElementById("bt").addEventListener("click", btt);
+	
+	function btt(){
+		document.getElementById("p3").style.display = "block";
+		document.getElementById("loaisach").style.display = "block";
+		document.getElementById("p2").style.width = "25%";
+		document.getElementById("p2").style.height = "300px";
+		document.getElementById("p2").style.background = "red";
+	}
+	document.getElementById("p3").addEventListener("click", dong);
+	function dong(){
+		document.getElementById("p3").style.display = "none";
+		document.getElementById("loaisach").style.display = "none";
+	}
+
+</script>-->
+</html>

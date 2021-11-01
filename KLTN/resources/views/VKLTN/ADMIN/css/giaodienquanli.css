@@ -1,0 +1,23 @@
+#the_a:hover{
+    background-color: #3dafb3;
+    color: white;
+}
+#danhsach_tintuc{
+    border: 1px solid #ddd;
+    width: 100%;
+    
+}
+#danhsach_tintuc a{
+    background-color: rgb(167, 166, 166);
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color:rgb(18, 107, 110);
+    font-weight: bold;
+    padding: 3%;width: 100%;
+}
+#danhsach_tintuc a:hover{
+    background-color: #EF5350;
+    color:white;
+}

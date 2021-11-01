@@ -1,0 +1,35 @@
+#the_a:hover{
+    background-color: #3dafb3;
+    color: white;
+}
+#danhsach_tintuc{
+    border: 1px solid #ddd;
+    width: 100%;
+    
+}
+#danhsach_tintuc a{
+    background-color: #f5f5f5;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color:rgb(18, 107, 110);
+    font-weight: bold;
+    padding: 3%;width: 100%;
+}
+#danhsach_tintuc a:hover{
+    background-color: #EF5350;
+    color:white;
+}
+#tieptucxemsanpham{
+    border:1px solid rgb(18, 107, 110);
+    color: rgb(18, 107, 110);
+    text-decoration: none;
+    padding:1% 2%;
+    border-radius: 3px;
+    margin-left:89%;
+}
+#tieptucxemsanpham:hover{
+    background-color: rgb(18, 107, 110);
+    color: white;
+}

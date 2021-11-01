@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trang quản lí</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../ADMIN/css/giaodienquanli.css">
+  <link rel="stylesheet" href="slidesanpham.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!--logo và đăng nhập-->
+    <div class="container-fluid" style="background:linear-gradient( rgb(14, 84, 87) ,rgb(18, 107, 110) 100%);">
+        <div class="row" style="height:40px;" >
+            <div class="col-md-8 ">
+                <img style="height: 38px;" src="../ADMIN/img/logo.JPG" alt="">
+            </div>
+            <div class="col-md-4" >
+                <img src="https://img.icons8.com/fluency-systems-filled/18/ffffff/user.png"/>
+                <a style="color: white;text-decoration: none;" href=""><i>Xin chào: Bùi Pháp</i></a>
+                <img style="margin-left:9%;"src="https://img.icons8.com/ios-glyphs/18/ffffff/exit.png"/>
+                <a style="color: white;text-decoration: none;" href=""> Logout</a>
+            </div>
+           
+        </div>
+    </div>
+    <!--danh mục quản lí-->
+    <div class="container-fluid">
+        <div class="row " style="background-color:rgb(18, 107, 110);">
+            <div class="col-md-1">
+                <div class="dropdown" style="margin:0%">
+                    <button style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/emoji/25/000000/deciduous-tree-emoji.png"/><br> CÂY GIỐNG</button>
+                    <ul class="dropdown-menu" >
+                      <li ><a id="the_a" style="font-weight: bold;" href="#">LOẠI CÂY</a></li>
+                      <li ><a id="the_a" style="font-weight: bold;" href="#">CÂY GIỐNG</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col ">
+                <a href="" style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding:7% 38%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/color/25/000000/sladeshare--v1.png"/><br> SLIDE</a>
+            </div>
+            <div class="col" >
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 30%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/fluency/25/000000/newspaper-.png"/><br>TIN TỨC</a>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 19%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/office/25/000000/List-of-parts.png"/><br>ĐƠN HÀNG</button>
+                    <ul class="dropdown-menu" >
+                        <li ><a id="the_a" style="font-weight: bold;" href="#">LOẠI CÂY</a></li>
+                        <li ><a id="the_a" style="font-weight: bold;" href="#">CÂY GIỐNG</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col">
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 20%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/fluency/25/000000/staff.png"/><br>NHÂN VIÊN</a>
+            </div>
+            <div class="col">
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 12%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/color/25/000000/attract-customers.png"/><br>KHÁCH HÀNG</a>
+            </div>
+            <div class="col">
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 20%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/fluency/25/000000/edit-chat-history.png"/><br>BÌNH LUẬN</a>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 20%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/color/25/000000/blocked-account-male.png"/><br>TÀI KHOẢN</button>
+                    <ul class="dropdown-menu" >
+                        <li ><a id="the_a" style="font-weight: bold;" href="#">LOẠI CÂY</a></li>
+                        <li ><a id="the_a" style="font-weight: bold;" href="#">CÂY GIỐNG</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col">
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 32%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/fluency/25/000000/new-contact.png"/><br>LIÊN HỆ</a>
+            </div>
+            <div class="col">
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 26%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/office/25/000000/play-graph-report.png"/><br>BÁO CÁO</a>
+            </div>
+            <div class="col">
+                <a style="background-color:rgb(14, 84, 87);color: white;font-weight: bold;padding: 7% 20%;" class="btn btn-default " type="button" data-toggle="dropdown"><img src="https://img.icons8.com/office/25/000000/settings.png"/><br>CÀI ĐẶT</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--tiêu đề-->
+    <div class="container-fluid" style="background:linear-gradient( rgb(18, 107, 110),#3dafb3 100%);">
+        <div class="col-md-8">
+            <h5 style="padding: 5px;"><span style="color: white;margin-left: 3px;">DANH MỤC QUẢN LÝ » </span> <i style="color: #fed000;">Cây giống</i></h5>
+        </div>
+        <div class="col-md-3" >
+            <form action="" class="form-group " style="margin-top:2%;" >
+                <input class="form-control float-left" type="text" style="width:85%;" placeholder="Nhập vào tên cây gi">
+                <button class="form-control float-left" style="background-color: #EF5350;width: 15%;" type="submit"><img src="https://img.icons8.com/emoji/25/000000/magnifying-glass-tilted-left-emoji.png"/></button>
+            </form>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn " data-toggle="modal" data-target="#myModal_them" style="background-color: #EF5350;color: white;margin-top:7%;">Thêm mới</button>
+            <div id="myModal_them" class="modal " role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" style="color: rgb(18, 107, 110);"><img src="https://img.icons8.com/ios-glyphs/20/4a90e2/plus-math.png"/>Thêm cây giống</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding:1% 0 ;">
+        <div class="col-md-3">
+            <div class="container-fluid ">
+                <div id="danhsach_tintuc" >
+                    <a href=""  style="font-weight: bold;background:linear-gradient( #EF5350 ,#b96462 100%);color: white;text-align: center;">DANH MỤC LOẠI CÂY</a>
+                    <a href=""> Cây ăn quả trưởng thành <span style="float:right;">»</span></a>
+                    <a href=""> Cây công trình<span style="float:right;">»</span></a>
+                    <a href=""> Cây lấy gỗ<span style="float:right;">»</span></a>
+                    <a href=""> Chế phẩm nông nghiệp<span style="float:right;">»</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <table class="table table-bordered table-striped" id="table2excel">
+                <thead>
+                  <tr>
+                      <th style="background-color: #EF5350;color: white;">#</th>
+                      <th style="background-color: #EF5350;color: white;">Firstname</th>
+                      <th style="background-color: #EF5350;color: white;">Lastname</th>
+                      <th style="background-color: #EF5350;color: white;">Email</th>
+                      <th style="background-color: #EF5350;color: white;">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>1</td>
+                    <td >John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>
+                        <button type="button" class="btn " data-toggle="modal" data-target="#myModal"><img src="https://img.icons8.com/material-outlined/15/000000/external-link.png"/></button>
+
+                        <div id="myModal" class="modal " role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Sửa cây giống</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn " data-toggle="modal" data-target="#myModal_xoa"><img src="https://img.icons8.com/android/15/000000/trash.png"/></button>
+                        <div id="myModal_xoa" class="modal " role="dialog" >
+                            <div class="modal-dialog" style="margin-top:15%;">
+                                <div class="modal-content" style="text-align:center;">
+                                <div class="modal-body">
+                                    <img src="https://img.icons8.com/fluency/40/ffffff/instagram-check-mark.png"/>
+                                    <h4>Bạn có chắc chắn muốn xóa!</h4>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal" style="font-weight: bold;">Thoát</button>
+                                    <a type="button" class="btn btn-danger" href="">Xác nhận</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <ul class="pagination" style="margin-left:72%;">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+            </div>
+        </div>
+      </div>
+      
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+
+#banner-danhsach p{
+    background-color: white;
+    padding: 5%;
+}
+#banner-danhsach a{
+    background-color: white;
+    display: block;
+    padding:1% 1% ;
+    width: 22%;
+    border-top: 1px solid #ccc;
+    text-decoration: none;
+    color:rgb(18, 107, 110);
+    font-weight: bold;
+}
+#banner-danhsach a:hover,#danhmuc a:hover{
+    background-color: rgb(18, 107, 110);
+    color: white;
+}
+#sanpham{
+    padding-top:2%;
+}
+#sanphambanchay{
+    margin-left: 6%;
+    background-color: rgb(18, 107, 110);
+    margin-right: 8%;height: 47px;
+    border-radius: 5px ;
+}
+#sanphambanchay h4{
+    float: left;
+    background-color: #3dafb3;
+    color:white;padding:14px;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    bottom:22%;
+}
+#sanphambanchay a{
+    text-decoration: none;
+    color: white;
+    margin-left:70%;
+    position: relative;
+    top:25%;
+    font-weight: bold;
+}
+#sanpham_loaicay{
+    padding-top:2%;
+}
+#sanphambanchay_loaicay{
+    margin-left: 6%;
+    background-color: rgb(18, 107, 110);
+    margin-right: 8%;height: 47px;
+    border-radius: 5px ;
+}
+#sanphambanchay_loaicay h4{
+    float: left;
+    background-color: #3dafb3;
+    color:white;padding:14px;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    bottom:22%;
+}
+#sanphambanchay_loaicay a{
+    text-decoration: none;color: white;margin-left:70%;position: relative;top:25%;font-weight: bold;
+}
+
+#danhmuc a{
+    background-color: white;
+    display: block;
+    width: 21%;
+    border-top: 1px solid #ccc;
+    text-decoration: none;
+    color:rgb(18, 107, 110);
+    font-weight: bold;
+    padding: 5%;width: 100%;
+}
+#danhsach_cay{
+    border: 1px solid #ddd;
+    width: 100%;
+}
+#danhsach_cay a{
+    background-color: white;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5%;width: 100%;
+}
+#danhsach_tintuc{
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+    
+}
+#danhsach_tintuc a{
+    background-color: rgb(18, 107, 110);
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    padding: 5%;width: 100%;
+}
+#danhsach_tintuc a:hover{
+    background-color: #3dafb3;
+    background:linear-gradient( #3dafb3,white,#3dafb3 100%);
+    color:rgb(18, 107, 110);
+}
+#x:hover{
+    color: black;
+    border-color: black;
+}
+#tieptucxemsanpham{
+    border:2px solid rgb(18, 107, 110);
+    color: rgb(18, 107, 110);
+    text-decoration: none;
+    padding:1% 5%;
+    border-radius: 3px;
+}
+#tieptucxemsanpham:hover{
+    background-color: rgb(18, 107, 110);
+    color: white;
+}
+#sp_hover:hover{
+    border:1px solid rgb(14, 84, 87);
+}

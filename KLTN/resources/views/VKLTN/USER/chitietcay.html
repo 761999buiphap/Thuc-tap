@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trang chủ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../USER/css/trangchu.css">
+  <link rel="stylesheet" href="slidesanpham.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    /* style hộp số */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:4rem;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:4rem;
+    text-align:center;
+    font-size:1.4rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+/* ]]> */
+    
+    </style>
+<body>
+    <div class="container-fluid" style="background-color: #d5d5d5;">
+        <div class="row" style="height:23px;font-size:13px;color:white;font-weight: bold;margin-top:5px;">
+            <div class="col-md-7" style="margin-left:6%;color: black;font-weight: normal;">
+                <p>Chào mừng bạn đến với cửa hàng cây giống </p>
+            </div>
+            <div class="col-md-2" >
+                <img src="https://img.icons8.com/fluency-systems-filled/18/ffffff/user.png"/>
+                <a style="color: white;text-decoration: none;" href="">Tài khoản</a>
+                <img style="margin-left:9%;" src="https://img.icons8.com/material-sharp/18/ffffff/available-updates.png"/>
+                <a style="color: white;text-decoration: none;" href="">Sản phẩm</a>
+            </div>
+            <div class="col-md-2">
+                <img style="float: left;" src="https://img.icons8.com/material-rounded/18/ffffff/marker.png"/>
+                <p>Hệ thống cửa hàng</p>
+            </div>
+        </div>
+    </div>
+    <!-- tìm kiếm -->
+    <div style="height:90px;" class="container-fluid pt-4">
+        <div class="row " >
+            <div class="col-md-2" style="margin-left:6%;">
+                <img src="../USER/img/logo.JPG" alt="">
+            </div>
+            <div class="col-md-7 mt-2" >
+                <div class="float-left h-75" style="width:10%;">
+                    <select class="form-control h-100"  name="" id="" >
+                        <option value="">all</option>
+                        <option value="">cây ăn quả</option>
+                    </select>
+                </div>
+                <div class="float-left h-75" style="width:75%;">
+                    <input  class="form-control h-100" type="text">
+                </div>
+                <div class="float-left h-75">
+                    <input class="form-control h-100" type="submit" value="Tìm kiếm" style="color:white;background-color:rgb(18, 107, 110);">
+                </div>
+            </div>
+            <div  class="col-md-2 mt-2">
+                <p style="border-radius: 99px;color:white;background-color: rgb(18, 107, 110);padding: 4%;width:70%;margin-top: 4%;">Gọi: 0968832922</p>
+            </div>
+        </div>
+    </div>
+    <!-- thanh quản lí -->
+    <div style="background-color: rgb(18, 107, 110);height:50px;" class="container-fluid" >
+        <div class="row">
+            <div class="col-md-3" >
+                <button type="button" class="btn btn-primary" style="margin-left: 25%;border-radius:0;width: 90%;background-color: #3dafb3;height: 50px;font-size: 17px;font-weight: bold;" data-toggle="dropdown">
+                    <img style="margin-right:3%;" src="https://img.icons8.com/ios-filled/25/ffffff/list.png"/> Danh mục sản phẩm
+                </button>
+                <div class="dropdown-menu" style="width: 82%;z-index:990;" >
+                    <div id="danhmuc">
+                        <a  class="dropdown-item" href="">> Cây ăn quả</a>
+                        <a  class="dropdown-item" href="">> Cây ăn quả trưởng thành</a>
+                        <a  class="dropdown-item" href="">> Cây công trình</a>
+                        <a  class="dropdown-item" href="">> Cây lấy gỗ</a>
+                        <a  class="dropdown-item" href="">> Chế phẩm nông nghiệp</a>
+                        <a  class="dropdown-item" href="">> Chế phẩm nông nghiệp</a>
+                        <a  class="dropdown-item" href="">> Chế phẩm nông nghiệp</a>
+                        <a  class="dropdown-item" href="">> Chế phẩm nông nghiệp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" >
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" style="margin-left:2%;" href=""><span>Trang chủ</span></a>
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" href="">Giới thiệu</a>
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" href="">Giới thiệu</a>
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" href="">Giới thiệu</a>
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" href="">Sản phẩm</a>
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" href="">Tin tức</a>
+                <a class="float-left pt-4 p-2 mr-5 font-weight-bold text-white text-decoration-none" href="">Liên hệ</a>
+                <a class="float-left pt-4 p-2 font-weight-bold text-white text-decoration-none" style="margin-left:6%;" href="">Giỏ hàng</a>
+                <img class="pt-3" src="https://img.icons8.com/pastel-glyph/25/ffffff/shopping-basket-2--v1.png"/>
+            </div>
+        </div>
+    </div>
+    <!-- chi tiet -->
+    <div class="container-fluid" style="background-color: #eff0f3;">
+        <div class="row p-5" style="margin:2% 4%;width:92%;background-color:white;">
+            <div class="col-md-9">
+                <div class="row ">
+                    <div class="col-md-5" >
+                        <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                    </div>
+                    <div class="col-md-7 ">
+                        <p><a href="" style="color: rgb(18, 107, 110);text-decoration: none;">Trang chủ</a><span> / </span><a href="" style="color: rgb(18, 107, 110);text-decoration: none;">Trà thái nguyên</a></p>
+                        <h4 style="font-size: 22px;">Trà ô long Matcha loại 3 – 1kg </h4>
+                        <h3 style="color: rgb(18, 107, 110);">125.000₫</h3>
+                        <p>Cây Chanh Thái sở dĩ được đặt tên là "chanh não người" hay " Chanh số 8" vì thứ quả này có hình dáng khá đặc biệt với những nếp nhăn xù xì khá giống với hình não người. Thực chất đây là chanh Thái, có mùi thơm rất đặc trưng, đã từng gây ấn tượng khi được sử dụng làm gia vị cho món Yom Yum của Thái Lan nổi tiếng khắp thế giới. Loại quả này có nguồn gốc từ Úc và cũng được trồng phổ biến ở Lào, Indonesia, Malaysia</p>
+                        <div style="border: 1px solid #f4f4f4;padding:3%;border-radius: 5px;">
+                            <h4 style="color: #d7102c;font-weight: bold;">Tiêu chí của chúng tôi:</h4>
+                            <ul>
+                                <li>Chọn lọc kĩ lưỡng từng giống cây</li>
+                                <li>Mức giá cạnh tranh nhất!</li>
+                                <li>Giao hàng nhanh nhất trong nội thành Hà Nội</li>
+                                <li>Hoàn tiền 100% nếu bạn không hài lòng</li>
+                            </ul>
+                        </div>
+                        <!--Thêm giỏ hàng-->
+                        <form style="margin-top:2%;" action="">
+                            <div class="buttons_added">
+                                <input class="minus is-form" type="button" value="-">
+                                <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                                <input class="plus is-form" type="button" value="+">
+                            </div>
+                            <button style="padding: 10px 25px;background-color:rgb(18, 107, 110);border: none;border-radius: 5px;color: white;" type="submit"  >Mua hàng</button>
+                        </form>
+                        <!-- Button mua ngay -->
+                        <button style="background: -webkit-linear-gradient(top,#f59000,#fd6e1d);padding:0 10%;margin-top:2%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            <h4>MUA NGAY</h4>
+                            <p>Gọi điện xác nhận và mua hàng tận nơi</p>
+                        </button>
+                        <div class="modal" id="myModal" >
+                            <div class="modal-dialog" style="margin-left: 20%;margin-top: 10%;">
+                            <div class="modal-content" style="width:800px;">
+                            
+                                <!-- Modal Header -->
+                                <div class="modal-header" style="color:white;background:linear-gradient(rgb(253, 110, 29) 0%, rgb(18, 107, 110) 100%);">
+                                <h4 class="modal-title">ĐẶT MUA BỘT TRÀ XANH THÁI NGUYÊN</h4>
+                                <button type="button " style="background-color: white;" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <h4 >Bột trà xanh Thái Nguyên 100.000₫</h4>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="padding:3%;">
+                                                <div class="col-md-3"><p>Số lượng</p></div>
+                                                <div class="col-md-9">
+                                                    <div class="buttons_added">
+                                                        <input class="minus is-form" type="button" value="-">
+                                                        <input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1">
+                                                        <input class="plus is-form" type="button" value="+">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Bạn vui lòng nhập đúng số điện thoại để chúng tôi sẽ gọi xác nhận đơn hàng trước khi giao hàng. Xin cảm ơn!</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>Thông tin người mua</h4>
+                                            <form action="">
+                                                <input name="gioitinh" type="radio"><label for="">Anh</label>
+                                                <input name="gioitinh" type="radio"><label for="">Chị</label>
+                                                <div class=" row">
+                                                    <div class="col">
+                                                        <input class="form-control " type="text" placeholder="Họ và tên">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input class="form-control " type="text" placeholder="Họ và tên">
+                                                    </div>
+                                                </div>
+                                                <input class="form-control mt-1" type="text" placeholder="Email">
+                                                <textarea class="form-control mt-1" name="" id="" cols="30" rows="2" placeholder="Địa chỉ"></textarea>
+                                                <textarea class="form-control mt-1" name="" id="" cols="30" rows="2" placeholder="Ghi chú đơn hàng"></textarea>
+                                            </form>
+                                            <p>Tổng: <span style="font-weight: bold;">100.000 ₫</span> </p>
+                                            <input class="form-control mt-1" style="background-color: #fe5d21;color: white;" type="submit" value="ĐẶT HÀNG NGAY">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--mô tả-đánh giá-->
+                <div class="row">
+                    <div class="col-md-12" >
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#home" >Mô tả</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#menu1">Đánh giá</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane container active" id="home">
+                                <ul>
+                                    <li>Khối lượng: 100g</li>
+                                    <li>Thương hiệu: Tâm trà Thái</li>
+                                    <li>Xuất sứ: Thái Nguyên</li>
+                                    <li>Thành phần: 100% chè tân cương Thái Nguyên</li>
+                                    <li>Hướng dẫn: Cho từ 3-5g trà, sau đó cho nước sôi vào, sau 5 phút bạn sẽ có tách trà như ý.</li>
+                                    <li>Hạn sử dụng: 12 tháng kể từ ngày sản xuất</li>
+                                    <li>Bảo quản: Để nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane container fade" id="menu1">
+                                <h4>Đánh giá</h4>
+                                    <form action="" style="border:1px solid green;width: 73%;padding: 2%;">
+                                        <label for="">Đánh giá của bạn </label><br>
+                                        <input type="radio" name="danhgia" >
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <input type="radio" name="danhgia" style="margin-left:1%;">
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <input type="radio" name="danhgia" style="margin-left:1%;">
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <input type="radio" name="danhgia" style="margin-left:1%;">
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <input type="radio" name="danhgia" style="margin-left:1%;">
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <img src="https://img.icons8.com/fluency/25/000000/star.png"/>
+                                        <br><br>
+                                        <label for="">Nhận xét của bạn *</label>
+                                        <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                                        <input class="form-control w-25" style="background-color: rgb(18, 107, 110);color: white;margin-top: 2%;" type="submit" value="Gửi đi">
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" >
+                <!--danh muc san pham-->
+                <div class="container-fluid">
+                    <h4 style="font-weight: bold;">Danh mục sản phẩm</h4>
+                    <div id="danhsach_cay" >
+                        <a href="">> Cây ăn quả</a>
+                        <a href="">> Cây ăn quả trưởng thành</a>
+                        <a href="">> Cây công trình</a>
+                        <a href="">> Cây lấy gỗ</a>
+                        <a href="">> Chế phẩm nông nghiệp</a>
+                        <a href="">> Chế phẩm nông nghiệp</a>
+                        <a href="">> Chế phẩm nông nghiệp</a>
+                        <a href="">> Chế phẩm nông nghiệp</a>
+                    </div>
+                </div>
+                <!--bai viet-->
+                <div class="container-fluid" >
+                    <h4 style="font-weight: bold;">Bài viết mới</h4>
+                    <div class="container-fluid" style="border: 1px solid #f4f4f4;width:90%;margin-left:0%;">
+                        <div class="row " style="height:80px;overflow: hidden;border-bottom: 1px solid #f4f4f4;padding: 2%;">
+                            <div class="col-md-4">
+                                <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                            </div>
+                            <div class="col-md-8" >
+                                <a href="" style="word-wrap:break-word;">dffjysjyfdbkdbfnddmddfbkbtlbtrlhrnyjdjtyjtujudjhthyjtyjtnsfhsyfdfnjyjyyjyjyjjdtjjtdyjtyyjmykynjjphap</a>
+                            </div>
+                        </div>
+                        <div class="row " style="height:80px;overflow: hidden;border-bottom: 1px solid #f4f4f4;padding: 2%;">
+                            <div class="col-md-4">
+                                <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                            </div>
+                            <div class="col-md-8" >
+                                <a href="" style="word-wrap:break-word;">dffjysjyfdbkdbfnddmddfbkbtlbtrlhrnyjdjtyjtujudjhthyjtyjtnsfhsyfdfnjyjyyjyjyjjdtjjtdyjtyyjmykynjjphap</a>
+                            </div>
+                        </div>
+                        <div class="row " style="height:80px;overflow: hidden;border-bottom: 1px solid #f4f4f4;padding: 2%;">
+                            <div class="col-md-4">
+                                <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                            </div>
+                            <div class="col-md-8" >
+                                <a href="" style="word-wrap:break-word;">dffjysjyfdbkdbfnddmddfbkbtlbtrlhrnyjdjtyjtujudjhthyjtyjtnsfhsyfdfnjyjyyjyjyjjdtjjtdyjtyyjmykynjjphap</a>
+                            </div>
+                        </div>
+                        <div class="row " style="height:80px;overflow: hidden;border-bottom: 1px solid #f4f4f4;padding: 2%;">
+                            <div class="col-md-4">
+                                <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                            </div>
+                            <div class="col-md-8" >
+                                <a href="" style="word-wrap:break-word;">dffjysjyfdbkdbfnddmddfbkbtlbtrlhrnyjdjtyjtujudjhthyjtyjtnsfhsyfdfnjyjyyjyjyjjdtjjtdyjtyyjmykynjjphap</a>
+                            </div>
+                        </div>
+                        <div class="row " style="height:80px;overflow: hidden;border-bottom: 1px solid #f4f4f4;padding: 2%;">
+                            <div class="col-md-4">
+                                <img style="width:100%;" src="../USER/img/sanpham.JPG" alt="">
+                            </div>
+                            <div class="col-md-8" >
+                                <a href="" style="word-wrap:break-word;">dffjysjyfdbkdbfnddmddfbkbtlbtrlhrnyjdjtyjtujudjhthyjtyjtnsfhsyfdfnjyjyyjyjyjjdtjjtdyjtyyjmykynjjphap</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- lien he -->
+    <div class="container-fluid" style="background-color: white;">
+        <div class="row" style="width:89%;margin-left:5%;margin-top:5%;">
+            <div class="col-md-4" >
+                <img src="../USER/img/logo.JPG" alt="">
+                <h4 style="font-weight:bold;">Cửa hàng cây giống</h4>
+                <p>Hải cây giống đã chính thức được thành lập. Bằng sự nỗ lực, nhiệt huyết và đam mê cháy bỏng với cây giống Việt, chúng tôi đã tìm tòi, nghiên cứu và cho ra đời hệ thống bán cây giống năng suất cao.</p>
+                <br><a href=""><img src="https://img.icons8.com/ios-glyphs/35/4a90e2/facebook-circled--v1.png"/></a>
+                <a href=""><img src="https://img.icons8.com/color/35/000000/gmail-new.png"/></a>                
+                <a href=""><img src="https://img.icons8.com/ios-filled/35/26e07f/ringing-phone.png"/></a>
+                <a href=""><img src="https://img.icons8.com/color/35/000000/youtube-play.png"/></a>
+                <br><br>
+                <p>Mọi ý kiến đóng góp xin gửi về hòm thư:</p>
+                <p style="color: rgb(18, 107, 110);">buithiphap761999@gmail.com</p>
+                <br><br>
+            </div>
+            <div class="col-md-4">
+                <h4><i style="font-family:Serif ;font-weight: bold;">Tổng đài tư vấn<span style="background-color: red;color:white;margin-left:3px;padding:1px 5px;">24/7</span></i></h4>
+                <h2 style="color: red;font-weight: bold;">1900-0099</h2>
+                <p>Chẳng phải đợi lâu, chúng tôi ship hàng mọi miền tổ quốc với phí ship ưu đãi nhất!</p>
+                <ul>
+                    <li>Địa chỉ: Thôn Ro, Tuyết Nghĩa, Quốc Oai, Hà Nội</li>
+                    <li>Hotline: 1900-0099</li>
+                    <li>Fanpage: <a href="" style="text-decoration:none;color:rgb(18, 107, 110);">Cây Giống Việt</a></li>
+                    <li>Email: buithiphap761999@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Bản đồ đường đi đến cửa hàng</h4>
+                <iframe style="width:100%;height: 80%;" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29804.286839080425!2d105.5714264450045!3d20.971146678988614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zdGjDtG4gcm8sIHR1eeG6v3QgbmdoxKlhLCBxdeG7kWMgb2FpLCBow6AgbuG7mWk!5e0!3m2!1svi!2s!4v1627979514048!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-md-8 " style="padding:10px 0;">
+                <p style="color:rgb(235, 229, 229);margin-left:11%;">Copyright 2021 © Thiết kế website Hà Nội </p>
+            </div>
+            <div class="col-md-4">
+                <p style="color:rgb(235, 229, 229);margin-left:45%;margin-top:3%;">Hotline: 0968 832 922</p>
+            </div>
+        </div>
+    </div>
+    <!-- icon -->
+    <a href=""><img style="position: fixed;bottom: 5%;right:1%;"src="https://img.icons8.com/material-rounded/50/4a90e2/circled-up.png"/></a>
+    <div style="position: fixed;bottom: 2%;left:2%;height:23%;width:20%;z-index:999;">
+        <a style="text-decoration:none;" href=""><p style="padding: 4% 8%;background-color: #8eb22b;color: white;border-radius: 50px;width: 40%;">Chat zalo</p></a>
+        <a style="text-decoration:none;" href=""><p style="padding: 4% 8%;background-color: #125c9e;color: white;border-radius: 50px;width: 52%;">Chat Facebook</p></a>
+        <a style="text-decoration:none;" href=""><p style="padding: 4% 8%;background-color: #d11a59;color: white;border-radius: 50px;width: 70%;">Hotline: 0968.832.922</p></a>
+        
+    </div>
+
+</body>
+<script>
+    
+    (function(){  
+    $('#carousel_number').carousel({ 
+    interval: 2000 
+    });  
+    
+    $('#carousel_alphabe').carousel({ 
+    interval: 3600 
+    });
+    $('#carousel_alphabe_2').carousel({ 
+    interval: 3600 
+    });
+    $('#carousel_alphabe_doitac').carousel({ 
+    interval: 3600 
+    });
+    }());
+ 
+    
+    
+    
+    (function(){  $('.carousel-showmanymoveone .item').each(function(){    
+    var itemToClone = $(this);
+        
+    for (var i=1;i<4;i++) {      
+    
+    itemToClone = itemToClone.next();
+        
+    if (!itemToClone.length) {        
+    itemToClone = $(this).siblings(':first');      
+    }
+        
+
+    itemToClone.children(':first-child').clone()        
+    .addClass("cloneditem-"+(i))        
+    .appendTo($(this));    
+    }  
+    });
+    }());
+
+</script>
+<script>//<![CDATA[
+    $('input.input-qty').each(function() {
+      var $this = $(this),
+        qty = $this.parent().find('.is-form'),
+        min = Number($this.attr('min')),
+        max = Number($this.attr('max'))
+      if (min == 0) {
+        var d = 0
+      } else d = min
+      $(qty).on('click', function() {
+        if ($(this).hasClass('minus')) {
+          if (d > min) d += -1
+        } else if ($(this).hasClass('plus')) {
+          var x = Number($this.val()) + 1
+          if (x <= max) d += 1
+        }
+        $this.attr('value', d).val(d)
+      })
+    })
+    //]]></script>
+</html>

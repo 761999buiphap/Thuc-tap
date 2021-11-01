@@ -1,0 +1,254 @@
+.header{
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    
+}
+.imgtrangchu{
+    width: 30%;
+    height: 95px;
+    top: 10px;
+    left: 9px;
+    
+    position: absolute;
+}
+.thanhdieuhuong{
+    list-style-type: none;
+    width: 61%;
+    height: 40px;
+    top: 25px;
+    right: 12px;
+    overflow: hidden;
+    position: absolute;
+   
+   
+   
+}
+.li{
+    float: right;
+}
+
+
+.menu{
+ 
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: arial;
+    font-weight:bolder;
+   
+}
+.menu:hover{
+    color:rgb(24, 162, 180);
+    text-decoration-line: underline;
+
+
+}
+.dangnhap{
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: arial;
+    font-weight:bolder;
+}
+.dangnhap:hover{
+    color:white;
+}
+.div2{
+    width: 65%;
+    padding: 17%;
+    background-color: aqua;
+}
+.div3{text-align: center;}
+.div4{ position: relative;padding: 10%;background-image: url(../TTCN1/hinhanh/div46.JPG);}
+.div4thongtin{
+    width: 40%;
+    top: 10%;
+    position: absolute;
+}
+.div4h3{
+    position: absolute;
+    top: 0%;
+    left:8%;
+    font-family: Arial
+}
+.div4thongtin1{
+    width: 40%;
+    top: 30%;
+    position: absolute;
+}
+.div4img1{
+    position: absolute;
+    top: 10%;
+    width: 35%;
+    left: 58%;
+}
+.div4timhieuthem{
+    position: absolute;
+    top: 85%;
+    padding: 10px 20px;
+    left: 73%;
+    text-align: center;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border:1px solid rgb(24, 162, 180);
+    color:rgb(24, 162, 180);
+}
+.div4timhieuthem:hover{
+    background-color: rgb(24, 162, 180);
+    color: white;
+}
+.div5{
+    position: relative;
+    background-color:#f2f2f2;
+    height: 600px;
+}
+.div5dichvu{
+    font-family: Arial;
+    margin-top: 3%;
+    text-decoration: none;
+    color: black;
+}
+.div5dichvu:hover{
+    color: red;
+    font-size:35px;
+}
+.div5tinhnangtrai{
+    left: 15%;
+    position: absolute;
+    width: 35%;
+}
+.div5tinhnangphai{
+    left: 60%;
+    position: absolute;
+    width: 35%;
+}
+.div5h3{
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+}
+.div5h3:hover{
+    color: red;
+    
+}
+.div6{
+    position: relative;padding: 20px;
+}
+.div6giaodien{
+    font-family: Arial;
+    margin-top: 3%;
+    text-decoration: none;
+    color: black;
+}
+.div6giaodien:hover{
+    color: red;
+    font-size:35px;
+}
+.dangkinhanbaogia{
+    position: absolute;
+    border: 1px solid white;
+    top: 20%;
+    right: 7%; 
+    width: 180px; 
+    background-color: rgb(24, 162, 180); 
+    text-decoration:none; 
+    font-family: arial; 
+    padding: 14px 25px;
+    color: white; 
+}
+.dangkinhanbaogia:hover{
+    border-color: yellow;
+    color: yellow;
+}
+.div8tintuc{
+    font-family: Arial;
+    text-align: center; 
+    margin-top: 3%;
+    text-decoration: none;
+    color: black;
+
+}
+.div8tintuc:hover{
+    color:red;
+    font-size:30px;
+}
+.div8_tin1{
+    width: 25%;
+    left: 7%;
+    top: 17%;
+    position: absolute;
+}
+
+.div8_tin2{
+    width: 25%;
+    left: 37%;
+    top: 17%;
+    position: absolute;
+}
+.div8_tin3{
+    width: 25%;
+    left: 68%;
+    top: 17%;
+    position: absolute;
+}
+.div8hover:hover{
+    color: red;
+}
+.div10_trai{
+    width: 550px;
+    height: 35%; 
+    position: absolute; 
+    left: 50%; 
+    top:5%;
+    
+}
+.div10_ul_1{
+    list-style-type: none;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    padding: 0px 15px;
+    top:0px;
+}
+.div10_ul_2{
+    list-style-type: none;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    padding: 10px 15px;
+    top: 25%;
+}
+.div10_ul_3{
+    list-style-type: none;
+    position: absolute;
+    left: 47%;
+    top: 40%;
+    display: block;
+    overflow: hidden;
+
+}
+.dienthoai{
+    position:fixed;
+    bottom: 20%;
+    right: 2%; 
+    border-radius: 50%;
+    width: 55px; 
+    height: 55px;
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes example{
+    50% {-ms-transform: rotate(50deg);transform: rotate(50deg); }
+    
+
+}
